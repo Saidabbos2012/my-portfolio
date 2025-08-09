@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     const text = `
 📬 Yangi kontakt xabari:
 👤 Ismi: ${name}
-📧 Email: ${phoneNumber}
+📧 Telefon raqam: ${phoneNumber}
 📝 Mavzu: ${subject}
 💬 Xabar: ${message}
   `
