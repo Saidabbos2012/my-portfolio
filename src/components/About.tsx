@@ -14,7 +14,7 @@ export default function About() {
                         As a frontend developer with 2+ years of experience, I specialize in transforming creative ideas into fully functional, modern web experiences. I combine strong UI/UX principles with advanced frontend technologies to build intuitive, responsive, and accessible interfaces.
                     </p>
                     <p className={`${styles.desc} mb-[20px]`}>
-                        I'm passionate about creating clean, scalable code and pixel-perfect designs that bring real value to users. I've worked on diverse projects — from personal portfolios to complex e-commerce platforms — always prioritizing performance and user satisfaction.
+                        I&apos;m passionate about creating clean, scalable code and pixel-perfect designs that bring real value to users. I&apos;ve worked on diverse projects — from personal portfolios to complex e-commerce platforms — always prioritizing performance and user satisfaction.
                     </p>
                     <a
                         href="/cv.pdf"

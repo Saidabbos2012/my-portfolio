@@ -17,7 +17,7 @@ import { styles } from "@/styles/styles"
 import { useState } from "react"
 
 function handlePhone(value: string, isDeleting: boolean): string {
-    let digits = value.replace(/\D/g, "").slice(0, 9)
+    const digits = value.replace(/\D/g, "").slice(0, 9)
 
     if (isDeleting) {
         return value
@@ -96,9 +96,10 @@ export default function HeaderForm() {
                                 <FormControl>
                                     <Input
                                         onChange={e => {
-                                            const isDeleting = e.nativeEvent.inputType === "deleteContentBackward"
-                                            const formatted = handlePhone(e.target.value, isDeleting)
-                                            field.onChange(formatted)
+                                            const nativeEvent = e.nativeEvent as InputEvent;
+                                            const isDeleting = nativeEvent.inputType === "deleteContentBackward";
+                                            const formatted = handlePhone(e.target.value, isDeleting);
+                                            field.onChange(formatted);
                                         }}
                                         inputMode="numeric"
                                         type="tel"
